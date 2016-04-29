@@ -1,0 +1,3 @@
+is_tuto_homepage:
+    path:     /
+    defaults: { _controller: ISTutoBundle:Advert:index }

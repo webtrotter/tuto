@@ -1,3 +1,3 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+is_tuto:
+    resource: "@ISTutoBundle/Resources/config/routing.yml"
+    prefix:   /
