@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Bienvenue sur ma première page avec OpenClassrooms !</title>
-    </head>
-    <body>
-        <h1>Hello World !</h1>
-        
-        <p>
-            Le Hello World est un grand classique en programmation.
-            Il signifie énormément, car cela veut dire que vous avez
-            réussi à exécuter le programme pour accomplir une tâche simple :
-            afficher ce hello world !
-        </p>
-    </body>
-</html>
+{% extends "::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Index{% endblock %}
+
+{% block body %}
+{{ dump(adverts)}}
+ {% for advert in adverts %}
+    {{ advert.id }}
+
+
+ {% endfor %}
+  Notre plateforme est un peu vide pour le moment, mais cela viendra !
+ 
+{% endblock %}
