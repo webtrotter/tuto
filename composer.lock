@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "33bb7b3d86bbf04695e886536002463d",
+    "hash": "6ef704ae19af15372a120a7bc68fdf63",
+    "content-hash": "044bc0a194856186c5006ca400d8deab",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1765,16 +1766,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.0.4",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "4e17cb2ecb3fd637097ebeb871fc0e2cbdd5e7ff"
+                "reference": "a821ed51b87f5ceda834140e5f0c06e9547a86d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/4e17cb2ecb3fd637097ebeb871fc0e2cbdd5e7ff",
-                "reference": "4e17cb2ecb3fd637097ebeb871fc0e2cbdd5e7ff",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a821ed51b87f5ceda834140e5f0c06e9547a86d4",
+                "reference": "a821ed51b87f5ceda834140e5f0c06e9547a86d4",
                 "shasum": ""
             },
             "require": {
@@ -1857,7 +1858,11 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Bridge\\": "src/Symfony/Bridge/",
+                    "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
+                    "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
+                    "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
+                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
+                    "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
                     "Symfony\\Bundle\\": "src/Symfony/Bundle/",
                     "Symfony\\Component\\": "src/Symfony/Component/"
                 },
@@ -1887,7 +1892,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-03-30 10:41:14"
+            "time": "2016-05-09 22:13:31"
         },
         {
             "name": "twig/twig",
@@ -2068,5 +2073,8 @@
     "platform": {
         "php": ">=5.5.9"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.5.9"
+    }
 }
